@@ -1,2 +1,7 @@
 # gnosocial
-This is a simple implementation of the core functionality for a simple Twitter-like social media platform, built on Gno.land.
+
+* The Code
+* [The Blog (Live)](https://wyhaines.hashnode.dev/building-gnosocial-a-decentralized-microblogging-platform-on-gnoland)
+* [The Blog (Local)](blog/)
+* [Promotion Strategy](promotion/)
+* [Onboarding Insights](onboarding_insights/)
