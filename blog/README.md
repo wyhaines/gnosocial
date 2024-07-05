@@ -181,26 +181,26 @@ If `Render` is called with a path ending in `/posts`, it will call the `RenderPo
 
 Now, let's see it in action! From the Gno Playground, you can deploy your code to any network connected to your wallet.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720182875730/aacd7bb4-e90b-4c83-a423-7534a703a749.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720182875730/aacd7bb4-e90b-4c83-a423-7534a703a749.png)
 
 Connect your wallet to Testnet 3. If you Gnot balance (the Gno.land token) is low, consider topping it up using the [Gno.land faucet](https://gno.land/faucet) before proceeding.
 
 To Deploy, click on the `Deploy` link in the top menu bar:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183067063/9f704631-a126-455a-a0b0-ae24c927cde0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183067063/9f704631-a126-455a-a0b0-ae24c927cde0.png)
 
 You should now see something similar to the image below:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183138035/edccc37a-13dd-4952-86ed-7aef1b86ac7c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183138035/edccc37a-13dd-4952-86ed-7aef1b86ac7c.png)
 
 The Path reflects where your realm will be deployed. Provide it with a username for yourself, which serves as a namespace for your realms. The name of the realm will automatically be set to match the package name.  
 Then, press `Deploy`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183255537/7d6ac63a-78e2-4562-a128-342b1de21d75.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183255537/7d6ac63a-78e2-4562-a128-342b1de21d75.png)
 
 Your wallet will ask you to confirm the transaction:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183372310/e090d305-6f6f-4001-9e50-4fb0d955515b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720183372310/e090d305-6f6f-4001-9e50-4fb0d955515b.png)
 
 On success, you will be rewarded by the deployment drop down displaying "Deployment Successful" and providing you with a link to interact with your newly deployed realm within the Gno Studio. If there was a problem with your code, you will see a stack trace with the error message. Go back and double check that you have copied all of the code in this tutorial faithfully, and then try again.
 
@@ -212,15 +212,15 @@ If you click on the link provided after the successful deployment, you will be t
 
 [https://gno.studio/connect/view/gno.land/r/kirk\_haines/gnosocial?network=test3](https://gno.studio/connect/view/gno.land/r/kirk_haines/gnosocial?network=test3)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720184756661/7edd4918-0892-43d1-97bb-5c1ecb7a33a4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720184756661/7edd4918-0892-43d1-97bb-5c1ecb7a33a4.png)
 
 Gno Studio Connect lets you interact with a deployed realm via your web browser. Scroll down until you see something similar to the following:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720184967154/b08e2c04-7032-4868-a4dc-cda71f66c784.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720184967154/b08e2c04-7032-4868-a4dc-cda71f66c784.png)
 
 These are the five callable functions that are defined in our Gnosocial realm. Go ahead and use one to create a post. Click on `CreatePost`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720185140210/59d91e72-60c4-4d4a-bed6-167c43220ebd.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720185140210/59d91e72-60c4-4d4a-bed6-167c43220ebd.png)
 
 Type your post, and when you are finished, press the `Call` button. Once again, your wallet will pop up a dialog asking for you to confirm the transaction. This is because any action which may change blockchain state much be in the context of a transaction, and thus must be paid for with Gnot.
 
@@ -230,7 +230,7 @@ Now, do the same with the `SendDirectMessage` function. Send me a direct message
 
 g1whzkakk4hzjkvy60d5pwfk484xu67ar2cl62h2
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720186148086/74208f63-3ce9-4b01-94f0-30f9927d7118.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720186148086/74208f63-3ce9-4b01-94f0-30f9927d7118.png)
 
 Now, let's take a look at the posts and direct messages. Remember that we created those helper functions, `RenderPosts` and `RenderDMs`. These functions, if called directly, cost Gnot to call, because it is possible that they could change chain state. Go ahead and try it.
 
@@ -238,7 +238,7 @@ When you call `RenderDMs`, pay attention to the string that is returned. It shou
   
 Now invoke the `Render` function. Notice that although there is a field to provide an argument, the button to invoke the function says "Eval" instead of "Call". This Gnosocial `Render` function will return all posts, or all dms, depending on how it is called. So, enter `/dms` into the field, and press `Eval`. You will get back something akin to this:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720187455710/1bca4e8a-2609-4db2-abf3-33401c5cf158.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720187455710/1bca4e8a-2609-4db2-abf3-33401c5cf158.png)
 
 See how it starts differently, with `All Direct Messages`? If you refer back to the code above, you will see that the choice of whether this happens or not is determined by whether a caller can be determined. When Render is invoked, it runs outside of a transaction, so no caller data is present from `GetOrigCaller()`.
 
