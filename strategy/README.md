@@ -39,25 +39,25 @@ KPI: Number of challenge submissions, and the engagement that the social media a
 KPI: Total reach across platforms, click-throughs to the full blog post, increase in the number of Gnosocial realms deployed.
 
 
-Target KPIs:
+# Target KPIs:
 
-Deployment Metrics:
+## Deployment Metrics:
 
 100+ new GnoSocial deployments within the first month
 
 
-Engagement Metrics:
+## Engagement Metrics:
 
 1000+ total interactions (posts + DMs) on featured GnoSocial instances
 
 
-Content Reach:
+## Content Reach:
 
 10,000+ views of the blog post across all platforms
 1,000+ click-throughs to the Gno Playground template
 
 
-Developer Adoption:
+## Developer Adoption:
 
 50+ unique developers contributing new features to GnoSocial
 
