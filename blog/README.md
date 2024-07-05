@@ -25,7 +25,7 @@ The Gno Playground provides a browser based editor and sandbox for Gno code, all
 
 To get started, navigate to the [Gno Playground](https://play.gno.land/).
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720172979620/34d98216-0451-4150-8f47-7c6f8ee22fa1.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720172979620/34d98216-0451-4150-8f47-7c6f8ee22fa1.png)
 
 The Playground will create an initial file for you. Add a new file named `gnosocial.gno` and delete the `package.gno` file.
 
