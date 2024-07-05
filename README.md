@@ -5,3 +5,5 @@
 * [The Blog (Local)](blog/)
 * [Promotion Strategy](promotion/)
 * [Onboarding Insights](onboarding_insights/)
+* [Deployed Realm -- Gno Studio](https://gno.studio/connect/view/gno.land/r/kirk_haines/gnosocial?network=test3)
+* [Deployed Realm -- Gno.land](https://test3.gno.land/r/kirk_haines/gnosocial)
